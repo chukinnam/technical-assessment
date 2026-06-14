@@ -97,3 +97,7 @@ AI tools were used to:
 - Review README.md and written-answers.md, and make them more readable.
 - Assist with bug fixes and research.
 - Unit test boilerplate
+
+## brief CMS or CRM integration note.
+
+Most CRMs authenticate via OAuth 2.0. For Dynamics 365, you register an app in Entra ID to get credentials, then exchange them for an access token. To do CRUD, you either use the official SDK — which manages auth for you — or call the REST API directly and pass the token yourself as a bearer header.
